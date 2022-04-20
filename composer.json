@@ -1,0 +1,49 @@
+{
+    "name": "johnturingan/route-mobile-laravel-notifications",
+    "description": "RouteMobile Notification Channel for laravel.",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "slack",
+        "route mobile"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Turingan",
+            "email": "john.turingan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3|^8.0",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "illuminate/notifications": "~5.8.0|^6.0|^7.0|^8.0|^9.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0|^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Snp\\Notifications\\Rml\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Snp\\Tests\\Notifications\\Rml\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Snp\\Notifications\\NotificationServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
