@@ -6,5 +6,6 @@ return [
         'gateway' => \Snp\Notifications\Rml\Services\RouteMobileGateway::class,
         'username' => 'username',
         'password' => 'password',
+        'cache' => false
     ]
 ];

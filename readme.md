@@ -29,6 +29,7 @@ To use this plugin, you need to add the following configuration to your config/s
     'gateway' => \Snp\Notifications\Rml\Services\RouteMobileGateway::class,
     'username' => 'username',
     'password' => 'password',
+    'cache' => false // Set to true if you want to cache login response
 ]
 ```
 

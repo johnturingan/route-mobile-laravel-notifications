@@ -37,7 +37,7 @@ class RouteMobileGateway implements Gateway
         try {
             $uri = config('services.route-mobile-notifications.host') . Endpoints::LOGIN;
 
-            if ($val = Cache::get($uri)) {
+            if ($val = Cache::get($uri) && config('services.route-mobile-notifications.cache')) {
                 $response = $val;
             } else {
                 $response = $this->http->post($uri, [
