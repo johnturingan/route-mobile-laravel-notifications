@@ -23,7 +23,7 @@ class NotificationServiceProvider  extends ServiceProvider
         );
 
         Notification::resolved(function (ChannelManager $service) {
-            $service->extend('rmlViber', function ($app) {
+            $service->extend(config('services.route-mobile-notifications.name', 'RMLViber'), function ($app) {
                 return new RmlViberChannel($app->make(config('services.route-mobile-notifications.gateway')));
             });
         });

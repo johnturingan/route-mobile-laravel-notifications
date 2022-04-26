@@ -1,7 +1,7 @@
 {
     "name": "johnturingan/route-mobile-laravel-notifications",
     "description": "RouteMobile Notification Channel for laravel.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "laravel",
         "notifications",
